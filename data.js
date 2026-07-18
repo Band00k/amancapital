@@ -30,7 +30,7 @@ const SITE_CONFIG = {
     "https://instagram.com/trader_ammy",
 
   pdfUrl:
-    "assets/top-5-under-10-watchlist.pdf",
+    "top-5-under-10-watchlist.pdf",
 
   formspreeEndpoint: "",
 
