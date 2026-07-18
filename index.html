@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#080b10" />
+  <meta name="description" content="Aman Capital premium stock watchlist. Educational purpose only." />
+  <meta property="og:title" content="Aman Capital Stock Vault" />
+  <meta property="og:description" content="Top 5 Under ₹10 high-risk stock watchlist." />
+  <meta property="og:type" content="website" />
+  <title>Aman Capital Stock Vault</title>
+  <link rel="icon" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Aman Capital home">
+      <span class="logo-mark">AC</span>
+      <span>
+        <strong id="brandName">Aman Capital</strong>
+        <small>STOCK VAULT</small>
+      </span>
+    </a>
+    <a class="nav-cta" href="#watchlist">Open Watchlist</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <span class="eyebrow"><i></i> EXCLUSIVE RESEARCH ACCESS</span>
+        <h1 id="pageTitle">Top 5 Under ₹10 Stock Watchlist</h1>
+        <p id="pageSubtitle">High-risk watchlist for educational research only</p>
+
+        <div class="hero-meta">
+          <span>Updated: <b id="updatedOn"></b></span>
+          <span>Keyword: <b id="dmKeyword"></b></span>
+          <span>Risk level: <b class="danger-text">HIGH</b></span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#watchlist" class="btn btn-primary">View all 5 stocks</a>
+          <a id="pdfHeroBtn" href="#" class="btn btn-secondary" download>Download PDF</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="market-pulse">
+          <span class="pulse-dot"></span>
+          WATCHLIST STATUS
+        </div>
+        <div class="hero-score">
+          <strong>5</strong>
+          <span>Research<br/>Candidates</span>
+        </div>
+        <div class="mini-bars">
+          <span style="height:26%"></span><span style="height:44%"></span>
+          <span style="height:37%"></span><span style="height:62%"></span>
+          <span style="height:56%"></span><span style="height:81%"></span>
+          <span style="height:72%"></span><span style="height:96%"></span>
+        </div>
+        <p>No buy/sell calls. No fantasy targets. Just a structured research shortlist.</p>
+      </div>
+    </section>
+
+    <section class="warning-strip">
+      <strong>⚠ Important:</strong>
+      Penny stocks can have low liquidity, sharp volatility and manipulation risk. Past performance does not guarantee future returns.
+    </section>
+
+    <section id="watchlist" class="section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE FULL LIST</span>
+          <h2>Premium Watchlist</h2>
+        </div>
+        <div class="filter-pills">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="risk">Highest Risk</button>
+          <button class="pill" data-filter="score">Top AI Score</button>
+        </div>
+      </div>
+      <div id="stockGrid" class="stock-grid"></div>
+    </section>
+
+    <section class="section research-box">
+      <div>
+        <span class="eyebrow">FREE RESEARCH PDF</span>
+        <h2>Save the complete watchlist</h2>
+        <p>Download the printable version containing all five stock cards, research checklist and risk disclaimer.</p>
+      </div>
+      <a id="pdfMainBtn" href="#" class="btn btn-primary" download>📄 Download PDF</a>
+    </section>
+
+    <section class="section community">
+      <div class="community-copy">
+        <span class="eyebrow">JOIN THE COMMUNITY</span>
+        <h2>Daily finance content, minus the motivational fog</h2>
+        <p>Use the buttons below to connect your real Telegram, WhatsApp, YouTube and Instagram links.</p>
+      </div>
+      <div class="community-grid">
+        <a id="telegramBtn" class="community-card" target="_blank" rel="noopener">
+          <span class="community-icon">✈</span>
+          <b>Join Telegram</b><small>Watchlists & updates</small>
+        </a>
+        <a id="whatsappBtn" class="community-card" target="_blank" rel="noopener">
+          <span class="community-icon">◉</span>
+          <b>Join WhatsApp</b><small>Community discussions</small>
+        </a>
+        <a id="youtubeBtn" class="community-card" target="_blank" rel="noopener">
+          <span class="community-icon">▶</span>
+          <b>Subscribe YouTube</b><small>Shorts & analysis</small>
+        </a>
+        <a id="instagramBtn" class="community-card" target="_blank" rel="noopener">
+          <span class="community-icon">◎</span>
+          <b>Follow Instagram</b><small>Reels & quick ideas</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="section lead-section">
+      <div class="lead-card">
+        <div>
+          <span class="eyebrow">GET FUTURE WATCHLISTS</span>
+          <h2>Receive the next report</h2>
+          <p>Connect a free Formspree endpoint in <code>data.js</code>. Until then, submissions are safely saved only in the visitor's browser.</p>
+        </div>
+        <form id="leadForm">
+          <label>
+            <span>Name</span>
+            <input name="name" autocomplete="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+          </label>
+          <button class="btn btn-primary" type="submit">Unlock future reports</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">KEEP WATCHING</span>
+          <h2>Next Reel Suggestions</h2>
+        </div>
+      </div>
+      <div id="reelGrid" class="reel-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <b>Aman Capital</b>
+      <p>Educational content only. Not registered investment advice.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Top</a>
+      <a href="#watchlist">Watchlist</a>
+      <a id="footerPdf" href="#" download>PDF</a>
+    </div>
+  </footer>
+
+  <div id="stockModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-card">
+      <button class="modal-close" data-close-modal aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </article>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
